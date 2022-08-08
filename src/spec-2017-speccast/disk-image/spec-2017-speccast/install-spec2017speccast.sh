@@ -44,6 +44,10 @@ sed -i "s/#FPPFLAGS+= -DSPECCAST/FPPFLAGS+= -DSPECCAST/g" /home/gem5/spec2017/be
 sed -i "s/#FINAL_CFLAGS   += -DGEM5 -DM5OP_ADDR=0xFFFF0000 -DM5OP_PIC/FINAL_CFLAGS   += -DGEM5 -DM5OP_ADDR=0xFFFF0000 -DM5OP_PIC/g" /home/gem5/spec2017/benchspec/Makefile.defaults
 sed -i "s/#FINAL_CXXFLAGS += -DGEM5 -DM5OP_ADDR=0xFFFF0000 -DM5OP_PIC/FINAL_CXXFLAGS += -DGEM5 -DM5OP_ADDR=0xFFFF0000 -DM5OP_PIC/g" /home/gem5/spec2017/benchspec/Makefile.defaults
 sed -i "s/#RAW_FFLAGS     += -DGEM5 -DM5OP_ADDR=0xFFFF0000 -DM5OP_PIC/RAW_FFLAGS     += -DGEM5 -DM5OP_ADDR=0xFFFF0000 -DM5OP_PIC/g" /home/gem5/spec2017/benchspec/Makefile.defaults
+sed -i "s/#FINAL_CFLAGS   += -DSPECCAST -fPIC/FINAL_CFLAGS   += -DSPECCAST -fPIC/g" /home/gem5/spec2017/benchspec/Makefile.defaults
+sed -i "s/#FINAL_CXXFLAGS += -DSPECCAST/FINAL_CXXFLAGS += -DSPECCAST/g" /home/gem5/spec2017/benchspec/Makefile.defaults
+sed -i "s/#RAW_FFLAGS     += -DSPECCAST/RAW_FFLAGS     += -DSPECCAST/g" /home/gem5/spec2017/benchspec/Makefile.defaults
+
 echo "modified makefile.default"
 
 # use the example config as the template
