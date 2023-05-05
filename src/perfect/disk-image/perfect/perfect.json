@@ -78,7 +78,7 @@
         },
         {
             "type": "file",
-            "source": "/home/zhewen/repo/perfect-suite",
+            "source": "/home/zhewen/repo/perfect-git/perfect-suite",
             "destination": "/home/gem5"
         },
         {
