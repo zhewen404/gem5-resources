@@ -15,6 +15,6 @@ cd /home/gem5/perfect-suite
 
 make clean
 echo "making perfect-suite"
-make INPUT_SIZE=LARGE SER_ONLY=true HOOKS=1
+make INPUT_SIZE=LARGE HOOKS=1
 
 echo "done make"
