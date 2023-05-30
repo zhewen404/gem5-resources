@@ -32,12 +32,12 @@ sed -i "s/command_add_redirect = 1/sysinfo_program =\ncommand_add_redirect = 1/g
 # fix 526
 sed -i 's/PORTABILITY   = -funsigned-char -DSPEC_LINUX/PORTABILITY = -funsigned-char -DSPEC_LINUX -std=gnu99/g' /home/gem5/spec2017/config/myconfig.x86.cfg
 # fix 510,502
-sed -i 's/FPORTABILITY    = -fconvert=big-endian/FPORTABILITY    = -fconvert=big-endiann\n\n510.parest_r:\n   PORTABILITY   = -fpermissive -std=c++03\n\n502.gcc_r:\n   PORTABILITY   = -fgnu89-inline/' /home/gem5/spec2017/config/myconfig.x86.cfg
+sed -i 's/FPORTABILITY    = -fconvert=big-endian/FPORTABILITY    = -fconvert=big-endian\n\n510.parest_r:\n   PORTABILITY   = -fpermissive -std=c++03\n\n502.gcc_r:\n   PORTABILITY   = -fgnu89-inline/' /home/gem5/spec2017/config/myconfig.x86.cfg
 
 # build all SPEC workloads
 # build_ncpus: number of cpus to build the workloads
 # gcc_dir: where to find the compilers (gcc, g++, gfortran)
-runcpu --config=myconfig.x86.cfg --define build_ncpus=$(nproc) --define gcc_dir="/usr" --action=runsetup all
+runcpu --config=myconfig.x86.cfg --define build_ncpus=$(nproc) --define gcc_dir="/usr" --action=build all
 
 # the above building process will produce a large log file
 # this command removes the log files to avoid copying out large files unnecessarily
