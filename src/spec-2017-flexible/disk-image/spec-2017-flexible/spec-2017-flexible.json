@@ -98,7 +98,7 @@
         "ssh_password": "12345",
         "ssh_username": "gem5",
         "vm_cpus": "24",
-        "vm_memory": "32768",
+        "vm_memory": "65536",
         "image_name": "spec-2017-flexible"
   }
 
