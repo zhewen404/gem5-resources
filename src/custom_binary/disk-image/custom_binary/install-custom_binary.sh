@@ -14,6 +14,8 @@ ls /home/gem5
 cd /home/gem5/microbench
 sed -i "s/GEM5_HOME=\/home\/zhewen\/repo\/gem5-dev\/gem5/GEM5_HOME=\/home\/gem5/g" /home/gem5/microbench/make.rules
 sed -i "s/LDFLAGS1=-L\$(GEM5_HOME)\/util\/m5\/build\/x86\/out -lm5/LDFLAGS1=-L\$(GEM5_HOME) -lm5/g" /home/gem5/microbench/make.rules
+sed -i "s/GEM5_HOME=\/home\/zhewen\/repo\/gem5-dev\/gem5/GEM5_HOME=\/home\/gem5/g" /home/gem5/microbench/int_vector_avg/Makefile
+sed -i "s/LDFLAGS1=-L\$(GEM5_HOME)\/util\/m5\/build\/x86\/out -lm5/LDFLAGS1=-L\$(GEM5_HOME) -lm5/g" /home/gem5/microbench/int_vector_avg/Makefile
 sed -i "s/GEM5_HOME=\/home\/zhewen\/repo\/gem5-dev\/gem5/GEM5_HOME=\/home\/gem5/g" /home/gem5/microbench/MGS/Makefile
 sed -i "s/LDFLAGS1=-L\$(GEM5_HOME)\/util\/m5\/build\/x86\/out -lm5/LDFLAGS1=-L\$(GEM5_HOME) -lm5/g" /home/gem5/microbench/MGS/Makefile
 sed -i "s/GEM5_HOME=\/home\/zhewen\/repo\/gem5-dev\/gem5/GEM5_HOME=\/home\/gem5/g" /home/gem5/microbench/MGSL/Makefile
